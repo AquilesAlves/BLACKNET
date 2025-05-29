@@ -65,7 +65,7 @@ h1{
     font-size: 24px;
     color: #e0e0e0;
     font-weight: bold;
-    border-bottom: 2px solid #32cd32;
+    border-bottom: 2px solid #962fd5;
     padding-bottom: 5px;
 }
 
@@ -94,7 +94,7 @@ button{
     border-radius: 10px;
     font-family: 'Nova Square', sans-serif;
     font-size: 18px;
-    background-color: limegreen;
+    background-color: #962fd5;
     border: 2px solid #2d2d2d;
     transition: transform 0.2s ease;
 }
@@ -104,20 +104,18 @@ button:hover{
 }
 
 .botaoPrincipal{
-    background-color: limegreen;
     color: #121212;
     margin: 8px;
 }
 
 .botaoSecundario{
-    background-color: limegreen;
     margin: 5px;
 }
 
 .msg{
     margin-top: 10px;
     background-color: #383838;
-    color: #b8fcb8;
+    color: #eacefc;
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -146,7 +144,7 @@ a{
     transition: color 0.3s ease;
 }
 a:hover{
-    color: limegreen;
+    color: #962fd5;
 }
 
 
