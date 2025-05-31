@@ -9,7 +9,11 @@ function trocaVencimento() {
     let diariaPlano = valorPlano / 30
     let diasProporcionais = 0
 
-    if (vencimentoAtual < vencimentoNovo) {
+    if (vencimentoAtual == vencimentoNovo) {
+        alert('Valores inválidos, não é possível trocar o vencimento para a mesma data!!!')
+        return
+
+    }else if (vencimentoAtual < vencimentoNovo) {
         diasProporcionais = vencimentoNovo - vencimentoAtual
 
     } else {
@@ -73,7 +77,11 @@ function trocaPlano() {
     let diasPlanoAntigo, diasPlanoNovo
 
     //if else para fazer o calculo
-    if (dataTroca > vencimento) {
+    if (dataTroca == vencimento) {
+        alert('Se o cliente solicitou a troca do plano no mesmo dia do vencimento, não tem proporcional!!!')
+        return
+
+    } else if (dataTroca > vencimento) {
         diasPlanoAntigo = dataTroca - vencimento
         diasPlanoNovo = vencimento - dataTroca + 30
 
