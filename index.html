@@ -20,9 +20,9 @@
                 <p>Dia do vencimento atual:</p>
                 <input type="number" class="input" id="vencimentoAtual" min="1" max="31">
                 <p>Dia do novo vencimento:</p>
-                <input type="number" class="input" id="vencimentoNovo" min="1" max="31">
+                <input type="number" class="input" id="vencimentoNovo" min="1" max="30">
                 <p>Valor do plano (R$):</p>
-                <input type="number" class="input" id="valorPlano" step="0.01">
+                <input type="number" class="input" id="valorPlano">
                 <button class="botaoPrincipal" onclick="trocaVencimento()">Calcular</button>
         
                 <div class="msg" id="msg1" ></div>
@@ -38,10 +38,10 @@
                 <p>Digite o valor do plano novo:</p>
                 <input type="number" class="input" id="valorNovo">
                 <p>Digite o dia do vencimento:</p>
-                <input type="number" class="input" id="vencimento" min="1" max="30">
+                <input type="number" class="input" id="vencimento" min="1" max="31">
         
                 <p>Digite o dia da Troca:</p>
-                <input type="number" class="input" id="dataTroca">
+                <input type="number" class="input" id="dataTroca" min="1" max="31">
                 <button class="botaoPrincipal" onclick="trocaPlano()">Calcular</button>
         
                 <div class="msg" id="msg3" ></div>
@@ -53,7 +53,7 @@
             <div class="card">
                 <h1>Desconto ou Cancelamento</h1>
                 <p>Digite os dias proporcionais:</p>
-                <input type="number" class="input" id="diasProporcionais">
+                <input type="number" class="input" id="diasProporcionais" min="1">
                 <p>Digite o valor do plano (R$):</p>
                 <input type="number" class="input" id="valorDoPlano">
                 <button class="botaoPrincipal" onclick="proporcional()">Calcular</button>

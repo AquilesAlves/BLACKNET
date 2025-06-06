@@ -69,13 +69,10 @@ function trocaPlano() {
     const msg3 = document.getElementById('msg3')
     const msg4 = document.getElementById('msg4')
 
-    //valor diario de cada plano
-    let diariaAntigo = valorAntigo / 30
-    let diariaNovo = valorNovo / 30
-
+    
     //declaração de variaveis
     let diasPlanoAntigo, diasPlanoNovo
-
+    
     //if else para fazer o calculo
     if (dataTroca == vencimento) {
         alert('Se o cliente solicitou a troca do plano no mesmo dia do vencimento, não tem proporcional!!!')
@@ -84,10 +81,23 @@ function trocaPlano() {
     } else if (dataTroca > vencimento) {
         diasPlanoAntigo = dataTroca - vencimento
         diasPlanoNovo = vencimento - dataTroca + 30
-
+        
     } else {
         diasPlanoAntigo = dataTroca - vencimento + 30
         diasPlanoNovo = vencimento - dataTroca 
+    }
+
+    //valor diario de cada plano
+
+    let diariaAntigo, diariaNovo
+
+    if (dataTroca == 31) {
+        diariaAntigo = valorAntigo / 31
+        diariaNovo = valorNovo / 31
+        diasPlanoNovo += 1
+    } else {
+        diariaAntigo = valorAntigo / 30
+        diariaNovo = valorNovo / 30
     }
 
     let proporcionalAntigo = diariaAntigo * diasPlanoAntigo
